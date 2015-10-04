@@ -8,7 +8,7 @@ function last(arr) {
   }
   alert(last(threeItems));
 
-//Why is it returning 2?
+
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
@@ -17,15 +17,14 @@ function last(arr) {
 var evenArray = [1,2,3,6,22,98,45,23,22,12];
 
   //code here
-function evens(arr) {
-    for (var i = 0; i < arr.length; i++) {
-      if (arr[i] % 2 !== 0) {
-        arr.splice(arr[i], 1);
-      }
+function getEven(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !==0 ) {
+      arr.splice(arr[i]);
     }
   }
 }
-
+//Need to figure this one out.
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
@@ -37,7 +36,17 @@ var getRandomArbitrary = function() {
 var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 
   //code here
-
+function checkRandom(arr, num) {
+  for (var i = 0; i < arr.length; i++) {
+    if (num === arr[i]) {
+      alert(true);
+    }
+    else {
+      alert(false);
+    }
+  }
+}
+checkRandom(randomArray, getRandomArbitrary());
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
